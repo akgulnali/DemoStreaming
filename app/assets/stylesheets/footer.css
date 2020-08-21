@@ -1,0 +1,47 @@
+.footer {
+	position: fixed;
+	padding-left: 150px;
+	padding-bottom: 20px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #202020;
+	color: #909090;
+}
+
+.bottom-navbar {
+	padding-top: 40px;
+	padding-bottom: 15px;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.bottom-navbar a {
+	color: #909090;
+	text-decoration: none;
+}
+
+.socialmedia a + a {
+  margin-left: 20px;
+}
+
+.bottom-navbar a {
+  display: inline-block;
+}
+
+.bottom-navbar a + a:before {
+	content: "|";
+  padding: 0 10px;
+}
+
+.socialmedia {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 100px;
+}
+
+.store {
+	float: right;
+  text-align: center;
+}

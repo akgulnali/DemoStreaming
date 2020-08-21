@@ -1,0 +1,54 @@
+.header .topnav, .subheader{
+  padding-left: 150px;
+  padding-right: 150px;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3399FF;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.navbutton {
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 6px 6px;
+  background-color: #404040;
+}
+
+.topnav-right {
+  float: right;
+  text-align: center;
+}
+
+.topnav h2 {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.subheader {
+  background-color: #404040;
+}
+
+.subheader h3 {
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
