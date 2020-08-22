@@ -1,12 +1,18 @@
 <div class="img-conainer">
   <div class="column">
-    <%= image_tag ("/../assets/placeholder.png"), alt:"Series" %>
-    <div class="text-on-picture">SERIES</div>
-    <p>Popular Series</p>
+    <a ui-sref="series">
+      <%= image_tag ("/../assets/placeholder.png"), alt:"Series" %>
+      <div class="text-on-picture">SERIES</div>
+      <p>Popular Series</p>
+    </a>
   </div>
   <div class="column">
-    <%= image_tag ("/../assets/placeholder.png"), alt:"Movies" %>
-    <div class="text-on-picture">MOVIES</div>
-    <p>Popular Movies</p>
+    <a ui-sref="movies">
+      <%= image_tag ("/../assets/placeholder.png"), alt:"Movies" %>
+      <div class="text-on-picture">MOVIES</div>
+      <p>Popular Movies</p>
+    </a>
   </div>
 </div>
+
+<div ui-view></div>

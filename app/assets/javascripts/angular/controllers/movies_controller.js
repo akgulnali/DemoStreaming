@@ -1,5 +1,5 @@
-var app = angular.module('DemoStreamingApp', []);
+var app = angular.module('movies', []);
 
-app.controller('MovieCtrl', ['$scope', function($scope) {
-
+app.controller('MoviesCtrl', ['$scope', function($scope) {
+	$scope.title = 'Movies';
 }]);
