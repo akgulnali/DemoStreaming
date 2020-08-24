@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This project is a well known codding challenge designed mainly using AngularJS and Ruby on Rails.
+
+## Version Overview
+
+* AngularJS version
+1.6.9
 
 * Ruby version
+2.4.2
 
-* System dependencies
+* Rails Version
+5.2.3
 
-* Configuration
+## Installation
 
-* Database creation
+Please be sure that you have the correct version of The Ruby and Rails installed before the start.
 
-* Database initialization
+After you install the correct versions, run the code below to install the project dependencies:
 
-* How to run the test suite
+'''bundle install'''
 
-* Services (job queues, cache servers, search engines, etc.)
+## Usage
 
-* Deployment instructions
+To run this project pls run the code below:
 
-* ...
+'''rails server'''
+
+After that, open a browser and type http://localhost:3000/ URL in the address bar.
+
