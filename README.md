@@ -21,13 +21,17 @@ Please be sure that you have the correct version of The Ruby and Rails installed
 
 After you install the correct versions, run the code below to install the project dependencies:
 
-'''bundle install'''
+```
+bundle install
+```
 
 ## Usage
 
 To run this project pls run the code below:
 
-'''rails server'''
+```
+rails server
+```
 
 After that, open a browser and type http://localhost:3000/ URL in the address bar.
 
