@@ -1,63 +1,4 @@
-var app = angular.module('DemoStreamingApp', ['ui.router', 'series', 'movies']);
-
-// app.factory('SampleData',['$resource', function($resource, $http) {
-//   // return $resource('sample.json');
-//   $http.get('/fetch_data').success(function(response) {
-//     data = response;
-//     console.log("data: ", data);
-//   });
-//   return {
-//     getData: function() {
-//       return data;
-//     }
-//   };
-// }]);
-
-// app.service('SampleData', ['$http', '$q', function($http, $q) {
-// 	return {
-// 		getData: function() {
-// 			return $http.get('(https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json)')
-// 				.then(function(result) {
-// 					console.log("result", result);
-// 					if (result.status == 200) {
-// 						return result.data
-// 					} else {
-// 						console.log("User data could not be fetched")
-// 						return null
-// 					}
-// 				})
-// 		},
-// 	}
-// }]);
-
-app.config(function($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('/home');
-    $stateProvider
-	  .state("home", {
-	    url:'/home',
-	    templateUrl: 'templates/home.html',
-	    // controller: 'SeriesCtrl',
-	  })
-	  $stateProvider
-	  .state("series", {
-	    url:'/series',
-	    templateUrl: 'templates/series.html',
-	    // controller: 'SeriesCtrl',
-	  })
-	  .state("movies", {
-	    url:'/movies',
-	    templateUrl: 'templates/movies.html',
-	    // controller: 'MoviesCtrl',
-	  });
-  }
-);
-
-app.controller('DashboardCtrl', ['$scope', function($scope) {
- 	$scope.title = "Titles";
- 	$scope.changeTitle = function(variable) {
-    $scope.title = variable;
-  };
- 	$scope.data = {
+{
   "total": 100,
   "entries": [
     {
@@ -1361,20 +1302,4 @@ app.controller('DashboardCtrl', ['$scope', function($scope) {
       "releaseYear": 2013
     }
   ]
-};
-
-// console.log("scoep: ", $scope.data[0].entries);
-
-// $scope.series = $scope.data[0].entries.filter(x => x.programType === 'series');
-// $scope.series = $scope.series.filter(x => x.releaseYear >= 2010);
-
-}]);
-
-// app.controller('SeriesCtrl', ['$scope', function($scope) {
-// 	$scope.title = 'Series';
-// }]);
-
-// app.controller('MoviesCtrl', ['$scope', function($scope) {
-// 	$scope.title = 'Movies';
-// }]);
-
+}

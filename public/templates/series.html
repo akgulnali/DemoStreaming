@@ -1,0 +1,8 @@
+<div class="img-container" ng-controller="SeriesCtrl">
+	<div ng-repeat="data in series | orderBy:'title' | limitTo : 21">
+		<div class="cover-img">
+			<img src="{{data.images['Poster Art'].url}}">
+			<p>{{data.title}}</p>
+		</div>
+	</div>
+</div>
